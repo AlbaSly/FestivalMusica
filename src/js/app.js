@@ -55,7 +55,9 @@ function fixNav() {
     window.addEventListener('scroll', function() {
         if (lineup.getBoundingClientRect().top < 0 + progressContainer.clientHeight) {
             header.classList.add('header-fixed');
-            body.style.paddingTop = header.clientHeight + 'px';
+            if (this.innerHeight >= 768) {
+                body.style.paddingTop = header.clientHeight + 'px';
+            }
         } else {
             header.classList.remove('header-fixed');
             body.style.paddingTop = '';
