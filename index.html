@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="header-nav">
+                <a href="#lineup">Line Up</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#tickets">Tickets</a>
+            </nav>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="bar"></div>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="video-overlay">
+            <div class="container video-content">
+                <h2>Rock & EDM Festival</h2>
+                <p>March 2022, Villahermosa, Tabasco</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="src/video/concierto.mp4" type="video/mp4">
+            <source src="src/video/concierto.ogg" type="video/ogg">
+            <source src="src/video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="container about-fest">
+        <div class="img">
+            <picture>
+                <!-- Avif -->
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="300" height="200" src="build/img/imagen_vocalista.jpg" alt="Image about a singer">
+            </picture>
+        </div>
+        <div class="fest-content">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fest-date">March 2022, Villahermosa, Tabasco</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eos enim possimus ut magnam facilis ipsam voluptates reiciendis consequuntur praesentium adipisci, incidunt doloremque est facere voluptas tenetur officiis. Ullam, at?</p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="day">Friday 22</p>
+        <div class="stages-container container">
+            <div class="stage rock bg-yellow">
+                <p class="stage-name">Rock Stage</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul> 
+            </div><!--Stage-->
+            <div class="stage edm bg-green">
+                <p class="stage-name">EDM Stage</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>                    
+                </ul> 
+            </div><!--Stage-->
+        </div> <!--Stages container-->
+
+        <p class="day">Saturday 23</p>
+        <div class="stages-container container">
+            <div class="stage rock bg-green">
+                <p class="stage-name">Rock Stage</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+                </ul> 
+            </div><!--Stage-->
+            <div class="stage edm bg-yellow">
+                <p class="stage-name">EDM Stage</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul> 
+            </div><!--Stage-->
+        </div> <!--Stages container-->
+    </section>
+
+    <section id="gallery" class="gallery container">
+        <h3>Gallery</h3>
+
+        <ul class="gallery-images"></ul>
+    </section>
+
+    <section id="tickets" class="tickets bg-green">
+        <h3>Tickets</h3>
+
+        <div class="container tickets-container">
+            <div class="pass basic-pass">
+                <p class="pass-name">1 Day</p>
+                <header class="header-pass">
+                    <p>Includes</p>
+                </header>
+                <div class="body-pass">
+                    <ul>
+                        <li>
+                            Access to both stages
+                        </li>
+                        <li>
+                            Drinks and Food
+                        </li>
+                    </ul>
+                </div>
+                <footer class="footer-pass">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="pass premium-pass">
+                <p class="pass-name">2 Days</p>
+                <header class="header-pass">
+                    <p>Includes</p>
+                </header>
+                <div class="body-pass">
+                    <ul>
+                        <li>
+                            Access to both stages
+                        </li>
+                        <li>
+                            Drinks and Food
+                        </li>
+                        <li>
+                            Event Shirt
+                        </li>
+                        <li>
+                            VIP Access
+                        </li>
+                    </ul>
+                </div>
+                <footer class="footer-pass">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Rock & EDM Festival. All Rights Reserved</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>

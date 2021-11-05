@@ -1,0 +1,12 @@
+@use 'base/vars' as var;
+
+.footer {
+    background-color: var.$pink;
+    padding: 1rem;
+
+    p {
+        margin: 0;
+        text-align: center;
+        color: var.$white;
+    }
+}

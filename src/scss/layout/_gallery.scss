@@ -1,0 +1,91 @@
+@use 'base/vars' as var;
+@use 'base/mixins' as mix;
+
+.gallery {
+    padding: 5rem 0;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.gallery-images {
+    @include mix.reset-list;
+    @include mix.grid(2, 2rem);
+
+    @include mix.phone {
+        @include mix.grid(3, 2rem);
+    }
+
+    @include mix.tablet {
+        @include mix.grid(4, 2rem);
+    }
+
+    @include mix.laptop {
+        @include mix.grid(6, 2rem);
+    }
+
+    .image {
+        transition: all .2s ease-out;
+    }
+    
+    .image:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    @include mix.fill-parent;
+
+    display: grid;
+    place-items: center;
+
+    .picture {
+        max-width: 80rem;
+        position: relative;
+
+        .picture-bg {
+            background-color: rgb(0 0 0 / .6);
+            position: absolute;
+            @include mix.fill-parent;
+        
+            opacity: 0;
+            transition: opacity .3s ease-in;
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.close-picture-btn {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: .4rem solid rgb(255 255 255 / .4);
+
+    color: rgb(255 255 255 / .4);
+    font-size: 4rem;
+
+    display: grid;
+    place-items: center;
+
+    transition: all .2s ease-out;
+
+    user-select: none;
+    &:hover {
+        border-color: rgb(255 255 255 / .8);
+        color: rgb(255 255 255 / .8);
+
+        transform: scale(1.2);
+    }
+}

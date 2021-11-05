@@ -1,0 +1,61 @@
+@use 'vars' as var;
+
+@mixin phone {
+    @media (min-width: var.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: var.$tablet) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: var.$laptop) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: var.$large) {
+        @content;
+    }
+}
+
+//Others
+@mixin grid($repeat, $spacing) {
+    display: grid;
+    grid-template-columns: repeat($repeat, 1fr);
+    gap: $spacing;
+}
+
+@mixin flexCenterY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin background-green {
+    background-color: var.$green;
+}
+
+@mixin background-yellow {
+    background-color: var.$yellow;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin fill-parent {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}

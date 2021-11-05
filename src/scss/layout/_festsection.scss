@@ -1,0 +1,26 @@
+@use 'base/vars' as var;
+@use 'base/mixins' as  mix;
+
+.about-fest {
+    padding: 5rem 0;
+    @include mix.tablet {
+        @include mix.grid(2, 5rem);
+    }
+}
+
+.fest-content {
+    margin-top: 5rem;
+    @include mix.tablet {
+        margin-top: 0;
+    }
+
+    @include mix.flexCenterY;
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .fest-date {
+        color: var.$pink;
+        font-weight: 700;
+    }
+}
